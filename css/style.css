@@ -176,8 +176,45 @@ main .container-main img {
 
 
 /* INICIO DA SEÇÃO DE CONTATO/RODAPÉ */
-#contato {
+footer {
+    margin-top: 20px;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
     background-color: #0080ed;
+    color: #fff;
 }
+
+.contato {
+    max-width: 980px;
+}
+
+footer ul {
+    list-style-type: none;
+    max-width: 32px;
+    margin: 5px;
+    margin-top: 10px;
+}
+
+.contato {
+    color: #fff;
+}
+
+/* #startse-img-footer li, a, img{
+    max-width: 600px;
+} */
+
+.social-media img{
+    max-width: 32px;
+    margin: 5px;
+    margin-top: 10px;
+}
+
+/* .social-media ul a, img{
+    max-width: 32px;
+    margin: 5px;
+    margin-top: 10px;
+} */
 
 /* FIM DA SEÇÃO DE CONTATO/RODAPÉ*/
