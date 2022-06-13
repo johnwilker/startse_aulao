@@ -31,25 +31,46 @@
     }
 }
 
-
 /* MEDIA PARA BOTÃO DE MENU - CONFIGURAÇÃO E TRANSIÇÕES */ 
 @media (max-width: 630px) {
-    nav {
-        display: none;
+    .menu-button-container {
+        display: flex;
     }
+
+    .menu {
+        position: absolute;
+        margin-top: 30px;
+        flex-direction: column;
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+        left: 100%;
+        transform: translateX(100vw);
+        transition: 0.5s ease transform;
+    }
+
+    .menu>li {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0px;
+        width: 100%;
+        color: #fff;
+        background-color: #0080ed;
+        border-radius: 5px;
+    }
+
+    .menu>li:not(:last-child) {
+        border-radius: 1px solid #fff;
+    }
+
+    .menu li a {
+        flex: 1;
+        text-align: center;
+    }
+
     main .container-menu img {
         display: none;
-    }
-    .container-menu {
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    #checkbox-menu {
-        position: absolute;
-        opacity: 0;
     }
 
     label {
@@ -95,5 +116,12 @@
         top: 8px; 
     }
 
-    
+     nav.menu {
+        width: 100%;
+     }
+
+     #checkbox-menu:checked~nav .menu {
+        transform: translateX(-100vw);
+        transition: 0.3s ease transform;
+     }
 }
