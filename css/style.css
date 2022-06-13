@@ -53,6 +53,10 @@ header nav ul li a:hover {
 header .container img {
     height: 30px;
 }
+
+#checkbox-menu {
+    display: none;
+}
 /* FIM DA SEÇÃO DE CABEÇALHO E MENU*/
 
 /* INICIO DA SEÇÃO MAIN - DA INCRIÇÃO NA NEWSLETTER */
